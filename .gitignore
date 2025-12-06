@@ -1,0 +1,13 @@
+# .gitignore
+__pycache__/
+*.pyc
+venv/
+.env
+.DS_Store
+*.log
+# Ignoramos la data cruda y procesada para no llenar el repo de CSVs pesados
+data/raw/*
+data/processed/*
+# Mantener un archivo vacío .gitkeep en esas carpetas para que git sepa que existen
+!data/raw/.gitkeep
+!data/processed/.gitkeep

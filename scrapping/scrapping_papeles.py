@@ -84,7 +84,7 @@ while True:
             
             # Nos quedamos con el menor precio encontrado
             lowest_price = min(prices) if prices else None
-
+            
             if product_name != "Nombre no encontrado" and lowest_price is not None:
                 scraped_data.append({
                     "Producto": product_name,
