@@ -1,8 +1,14 @@
-CREATE DATABASE TesisPrecios;
+-- 1. Verificamos si la base de datos existe. Si no existe, la creamos.
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'TesisPrecios')
+BEGIN
+    CREATE DATABASE TesisPrecios;
+END
 GO
+
 USE TesisPrecios;
 GO
 
+-- 2. Ahora creamos las tablas (Esto estaba bien, solo lo repito para que tengas todo junto)
 CREATE TABLE Dim_Supermercados (
     ID_Supermercado INT IDENTITY(1,1) PRIMARY KEY,
     Nombre VARCHAR(50) UNIQUE
