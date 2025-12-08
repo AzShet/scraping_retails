@@ -55,3 +55,5 @@ BEGIN
     PRINT 'Tabla Fact_Precios creada.';
 END
 GO
+
+-- EXECUTE sp_changedbowner 'sa';
